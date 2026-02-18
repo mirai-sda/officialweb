@@ -1,11 +1,16 @@
 import { motion, MotionConfig } from "framer-motion";
-const MenuButton = (active, setActive) => {
+
+interface Props {
+  active: boolean;
+  setActive: (active: boolean) => void;
+}
+const MenuButton = ({ active, setActive }: Props) => {
   return (
     <MotionConfig transition={{ duration: 0.3, ease: "easeInOut" }}>
-      <motion.button
+      <motion.div
         onClick={() => setActive}
         className="relative h-10 w-10 rounded-lg bg-white/0 transition-colors hover:bg-white/20"
-        animate={active.active ? "open" : "close"}
+        animate={active ? "open" : "close"}
         initial={false}
       >
         <motion.span
@@ -65,7 +70,7 @@ const MenuButton = (active, setActive) => {
             },
           }}
         />
-      </motion.button>
+      </motion.div>
     </MotionConfig>
   );
 };
