@@ -11,8 +11,17 @@ interface Link {
 
 export const images = {
     logo,
-    spanish,
-    english,
+};
+
+export const languages = {
+    es: {
+        name: "Spanish",
+        image: spanish,
+    },
+    en: {
+        name: "English",
+        image: english,
+    },
 };
 
 export const links: Record<string, Link[]> = {
