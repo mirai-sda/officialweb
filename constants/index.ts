@@ -28,35 +28,74 @@ export const links: Record<string, Link[]> = {
     en: [
         {
             id: 1,
-            title: "Home",
-            url: "/",
+            title: "Services",
+            url: "/services",
         },
         {
             id: 2,
-            title: "Portfolio",
-            url: "/portfolio",
+            title: "Pricing",
+            url: "/pricing",
         },
         {
             id: 3,
-            title: "Experience",
-            url: "/experience",
+            title: "Testimonials",
+            url: "/testimonials",
+        },
+        {
+            id: 4,
+            title: "About",
+            url: "/about",
         }
     ],
     es: [
         {
             id: 1,
-            title: "Inicio",
-            url: "/",
+            title: "Servicios",
+            url: "/services",
         },
         {
             id: 2,
-            title: "Portafolio",
-            url: "/portfolio",
+            title: "Precios",
+            url: "/pricing",
         },
         {
             id: 3,
-            title: "Experiencia",
-            url: "/experience",
+            title: "Testimonios",
+            url: "/testimonials",
+        },
+        {
+            id: 4,
+            title: "Sobre nosotros",
+            url: "/about",
         }
+    ],
+};
+
+export const contactLinks: Record<string, Link[]> = {
+    en: [
+        {
+            id: 1,
+            title: "Contact us",
+            url: "/contact",
+        },
+        {
+            id: 2,
+            title: "Book Consultation",
+            url: "/book-consultation",
+        },
+
+    ],
+    es: [
+        {
+            id: 1,
+            title: "Contáctanos",
+            url: "/contact",
+        },
+        {
+            id: 2,
+            title: "Reservar Consulta",
+            url: "/book-consultation",
+        },
+
     ],
 };

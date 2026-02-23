@@ -15,7 +15,13 @@ const LanguageMenu = () => {
           }`}
           onClick={() => setLang(key)}
         >
-          <Image src={value.image} alt={value.name} width={20} height={20} />
+          <Image
+            src={value.image}
+            alt={value.name}
+            width={30}
+            height={30}
+            className="w-10 h-10 lg:w-6 lg:h-6"
+          />
         </li>
       ))}
     </ul>

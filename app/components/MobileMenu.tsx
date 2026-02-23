@@ -1,9 +1,11 @@
 import Link from "next/link";
 import LanguageMenu from "./LanguageMenu";
 import MenuButton from "./MenuButton";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLangStore } from "@/store/useLangStore";
 import { links } from "@/constants";
+import ContactMenu from "./ContactMenu";
+import Logo from "./Logo";
 
 const MobileMenu = () => {
   const { lang } = useLangStore();
@@ -19,23 +21,33 @@ const MobileMenu = () => {
     toggleActive();
   };
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isOpen]);
+
   return (
-    <div className="md:hidden flex-col">
-      <div className="z-50 md:hidden flex items-center">
+    <div className="lg:hidden sticky top-0 z-10 flex flex-col px-4 py-2">
+      <div className="z-20 flex items-center justify-between">
+        <Logo />
         <span onClick={toggleMenu} aria-label="Toggle menu">
           <MenuButton active={active} setActive={toggleActive} />
         </span>
       </div>
 
       {isOpen && (
-        <div className="fixed inset-0 z-20 bg-secondary-dark/90 p-12 flex flex-col gap-6 items-center justify-center">
-          <ul className="flex flex-col gap-4 text-xl text-center">
+        <div className="z-10 h-screen flex flex-col gap-8 items-center py-20 justify-start bg-white/50 backdrop-blur-sm transition-all duration-300">
+          <ul className="flex flex-col gap-8 text-2xl text-center ">
             {links[lang].map((link) => (
               <li key={link.id} onClick={toggleMenu}>
                 <Link href={link.url}>{link.title}</Link>
               </li>
             ))}
           </ul>
+          <ContactMenu />
           <LanguageMenu />
         </div>
       )}

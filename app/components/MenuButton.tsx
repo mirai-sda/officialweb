@@ -9,7 +9,7 @@ const MenuButton = ({ active, setActive }: Props) => {
     <MotionConfig transition={{ duration: 0.3, ease: "easeInOut" }}>
       <motion.div
         onClick={() => setActive}
-        className="relative h-10 w-10 rounded-lg bg-white/0 transition-colors hover:bg-white/20"
+        className="relative h-10 w-10 rounded-lg bg-primary/50 transition-colors hover:bg-primary/90"
         animate={active ? "open" : "close"}
         initial={false}
       >
