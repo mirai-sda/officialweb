@@ -1,9 +1,9 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-
+import { Language } from "../types";
 interface LangStore {
-  lang: string;
-  setLang: (newLang: string) => void;
+  lang: Language;
+  setLang: (newLang: Language) => void;
 }
 
 export const useLangStore = create<LangStore>()(
@@ -11,7 +11,7 @@ export const useLangStore = create<LangStore>()(
     (set) => ({
       lang: "en",
 
-      setLang: (newLang: string) => {
+      setLang: (newLang: Language) => {
         set({ lang: newLang });
       },
     }),
