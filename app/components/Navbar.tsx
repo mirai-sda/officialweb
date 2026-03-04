@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
   }, [pathname]);
 
   return (
-    <nav className="flex flex-col justify-center ">
+    <nav className="flex flex-col  justify-center ">
       <DesktopMenu />
       <MobileMenu />
     </nav>

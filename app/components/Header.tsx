@@ -17,7 +17,7 @@ const Header = () => {
   }, []);
   return (
     <header
-      className={`w-full  shadow-md border-b border-primary/10 sticky top-0 z-10 transition-all duration-300 ${
+      className={`w-full   shadow-md border-b border-primary/10 sticky top-0 z-10 transition-all duration-300 ${
         isScrolled ? "bg-white/50 backdrop-blur-xs" : "bg-white"
       }`}
     >

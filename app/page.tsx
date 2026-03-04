@@ -1,7 +1,11 @@
+import Hero from "./(Home)/components/Hero";
+import Services from "./(Home)/components/Services";
+
 export default function Home() {
   return (
-    <div className="flex w-full max-w-3xl flex-col items-center justify-between sm:items-start">
-      
+    <div className="flex flex-col py-10 lg:py-0">
+      <Hero />
+      <Services />
     </div>
   );
 }

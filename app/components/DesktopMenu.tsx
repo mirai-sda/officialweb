@@ -9,7 +9,7 @@ const DesktopMenu = () => {
   const { lang } = useLangStore();
 
   return (
-    <div className="hidden lg:flex sticky max-w-screen-2xl mx-auto top-0 z-10 w-full justify-between items-center gap-4 px-4 py-2 lg:px-4k lg:py-4 transition-all duration-300">
+    <div className="hidden lg:flex sticky max-w-7xl mx-auto top-0 z-10 w-full justify-between items-center gap-4 px-4 py-2 lg:px- lg:py-4 transition-all duration-300">
       <Logo />
       <ul className="flex gap-4">
         {links[lang].map((link) => (
