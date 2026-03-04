@@ -7,7 +7,7 @@ const Services = () => {
   const { lang } = useLangStore();
 
   return (
-    <div className="flex flex-col gap-4 py-10 lg:py-4  bg-gray-50">
+    <div className="flex flex-col gap-4 py-10 lg:py-4  bg-slate-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex flex-col gap-4 justify-center items-center max-w-2xl text-center mx-auto">
           <p className="text-lg font-bold text-secondary">

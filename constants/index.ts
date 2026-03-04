@@ -9,7 +9,7 @@ import heroperson1 from "../assets/images/heroperson-01.webp";
 import heroperson2 from "../assets/images/heroperson-02.webp";
 import heroperson3 from "../assets/images/heroperson-03.webp";
 
-import { FaCode, FaArrowRight, FaRobot, FaCloud, FaGlobe, FaGears } from "react-icons/fa6";
+import { FaCode, FaArrowRight, FaRobot, FaCloud, FaGlobe, FaGears, FaCalendarCheck, FaCubes, FaUsersGear } from "react-icons/fa6";
 
 interface Link {
     id: number;
@@ -416,8 +416,165 @@ export const services = {
                 button: "Habla con un experto",
                 url: "/book-consultation",
                 icon: FaArrowRight,
-            },  
+            },
         ],
     }
 }
 
+export const portfolios = {
+    en: {
+        title: "Pre-Built Solutions",
+        subtitle: "Our SaaS Portfolio",
+        description: "Accelerate your digital transformation with our suite of battle-tested, ready-to-deploy enterprise software products.",
+        learnMore: "Learn More",
+        listPortfolio: [
+            {
+                id: 1,
+                title: "Specialized ERPs",
+                description: "Cloud-based ERPs tailored to education, healthcare, accounting, and sports.",
+                url: "/services/erp",
+                icon: FaCubes,
+            },
+            {
+                id: 2,
+                title: "Intelligent CRM",
+                description: "Organize clients, contacts, and communications in one place.",
+                url: "/services/crm",
+                icon: FaUsersGear,
+            },
+            {
+                id: 3,
+                title: "Chatbots with Integrations",
+                description: "Chatbots connected to your systems to respond and assist 24/7.",
+                url: "/services/chatbot",
+                icon: FaRobot,
+            },
+            {
+                id: 4,
+                title: "Customized Appointments",
+                description: "Online booking and automatic reminders tailored to your business.",
+                url: "/services/appointment",
+                icon: FaCalendarCheck,
+            },
+
+        ],
+    },
+    es: {
+        title: "Soluciones Pre-Construidas",
+        subtitle: "Nuestro Portfolio SaaS",
+        description: "Acelere su transformación digital con nuestro conjunto de productos de software empresarial probados y listos para implementar.",
+        learnMore: "Más información",
+        listPortfolio: [
+            {
+                id: 1,
+                title: "ERP Especializados",
+                description: "ERPs en la nube adaptados a educación, salud, contabilidad y deporte.",
+                url: "/services/erp",
+                icon: FaCubes,
+            },
+            {
+                id: 2,
+                title: "CRM Inteligente",
+                description: "Organizá clientes, contactos y comunicaciones en un solo lugar.",
+                url: "/services/crm",
+                icon: FaUsersGear,
+            },
+            {
+                id: 3,
+                title: "Chatbots con Integraciones",
+                description: "Chatbots conectados a tus sistemas para responder y asistir 24/7.",
+                url: "/services/chatbot",
+                icon: FaRobot,
+            },
+            {
+                id: 4,
+                title: "Turnos Personalizados",
+                description: "Reservas online y recordatorios automáticos adaptados a tu negocio.",
+                url: "/services/appointment",
+                icon: FaCalendarCheck,
+            },
+
+        ],
+    }
+}
+
+export const pricings = {
+    en: {
+        title: "Clear, transparent pricing with no surprises.",
+        description: "Flexible plans designed to adapt to the size and stage of your business.",
+        listPricing: [
+            {
+                title: "Starter",
+                subtitle: "Ideal para MVP y pequeñas empresas",
+                price: "",
+                features: [
+                    "Core system features",
+                    "Responsive interface design (desktop and mobile)",
+                    "Initial cloud infrastructure setup",
+                    "Basic technical support",
+                ]
+            },
+            {
+                title: "Professional",
+                subtitle: "For growing businesses",
+                price: "",
+                features: [
+                    "Full system development",
+                    "Custom integrations with external APIs",
+                    "Database design and optimization",
+                    "Dedicated project management",
+                ]
+            },
+            {
+                title: "Enterprise",
+                subtitle: "For organizations with advanced needs",
+                price: "Custom",
+                features: [
+                    "Advanced infrastructure (multi-environment / multi-cloud)",
+                    "Ongoing maintenance with service level agreements (SLAs)",
+                    "Security and compliance audits",
+                    "White label options",
+                ]
+            },
+        ]
+    },
+    es: {
+        title: "Precios claros y sin sorpresas.",
+        description: "Planes flexibles pensados ​​para adaptarse al tamaño y etapa de tu negocio.",
+        listPricing: [
+            {
+                title: "Starter",
+                subtitle: "Ideal para MVP y pequeñas empresas",
+                price: "",
+                features: [
+                    "Funcionalidades principales del sistema",
+                    "Diseño de interfaz adaptable (desktop y mobile)",
+                    "Configuración inicial de infraestructura en la nube",
+                    "Soporte técnico básico",
+                ]
+            },
+            {
+                title: "Profesional",
+                subtitle: "Para empresas en crecimiento",
+                price: "",
+                features: [
+                    "Desarrollo completo del sistema",
+                    "Integraciones personalizadas con APIs externas",
+                    "Diseño y optimización de base de datos",
+                    "Gestión del proyecto dedicada",
+                ]
+            },
+            {
+                title: "Empresarial",
+                subtitle: "Para organizaciones con necesidades avanzadas",
+                price: "Personalizado",
+                features: [
+                    "Infraestructura avanzada (multi-entorno / multinube)",
+                    "Mantenimiento continuo con acuerdos de servicio (SLA)",
+                    "Auditorías de seguridad y cumplimiento",
+                    "Opciones de marca blanca",
+                ]
+            },
+        ]
+    }
+}
