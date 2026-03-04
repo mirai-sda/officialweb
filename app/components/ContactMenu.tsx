@@ -10,7 +10,7 @@ const ContactMenu = () => {
         <Link
           key={link.id}
           href={link.url}
-          className={`${link.url === "/contact" ? "bg-primary/5" : "bg-primary text-white"} text-lg px-4 py-2 rounded-lg shadow-md hover:scale-110 transition-all duration-200`}
+          className={`${link.url === "/contact" ? "bg-primary/5" : "bg-secondary text-white"} text-lg px-4 py-2 rounded-lg shadow-md hover:scale-110 transition-all duration-200`}
         >
           {link.title}
         </Link>

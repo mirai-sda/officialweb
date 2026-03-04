@@ -500,78 +500,102 @@ export const portfolios = {
 
 export const pricings = {
     en: {
-        title: "Clear, transparent pricing with no surprises.",
+        title: "Transparent pricing plans",
         description: "Flexible plans designed to adapt to the size and stage of your business.",
         listPricing: [
             {
+                id: 1,
                 title: "Starter",
                 subtitle: "Ideal para MVP y pequeñas empresas",
-                price: "",
+                price: "$140",
+                project: "/project",
+                url: "",
+                label: "Select Plan",
                 features: [
-                    "Core system features",
-                    "Responsive interface design (desktop and mobile)",
-                    "Initial cloud infrastructure setup",
-                    "Basic technical support",
+                    "Core Feature Development",
+                    "Responsive UI Design",
+                    "Cloud Infrastructure Setup",
+                    "Basic Technical Support",
                 ]
             },
             {
+                id: 2,
                 title: "Professional",
                 subtitle: "For growing businesses",
-                price: "",
+                price: "$240",
+                project: "/project",
+                url: "",
+                label: "Get Started",
+                popular: "Most Popular",
                 features: [
-                    "Full system development",
-                    "Custom integrations with external APIs",
-                    "Database design and optimization",
-                    "Dedicated project management",
+                    "Full-Cycle Development",
+                    "Custom APIs integrations",
+                    "Database Architecture",
+                    "Dedicated Project Manager",
                 ]
             },
             {
+                id: 3,
                 title: "Enterprise",
                 subtitle: "For organizations with advanced needs",
                 price: "Custom",
+                url: "",
+                label: "Contact Sales",
                 features: [
-                    "Advanced infrastructure (multi-environment / multi-cloud)",
-                    "Ongoing maintenance with service level agreements (SLAs)",
-                    "Security and compliance audits",
-                    "White label options",
+                    "Multi-Cloud Infrastructure",
+                    "SLA-Backed Maintenance",
+                    "Security & Compliance Audits",
+                    "White-Label Options",
                 ]
             },
         ]
     },
     es: {
-        title: "Precios claros y sin sorpresas.",
+        title: "Planes de precios transparentes",
         description: "Planes flexibles pensados ​​para adaptarse al tamaño y etapa de tu negocio.",
         listPricing: [
             {
+                id: 1,
                 title: "Starter",
                 subtitle: "Ideal para MVP y pequeñas empresas",
-                price: "",
+                price: "$140",
+                project: "/proyecto",
+                url: "",
+                label: "Seleccionar Plan",
                 features: [
-                    "Funcionalidades principales del sistema",
-                    "Diseño de interfaz adaptable (desktop y mobile)",
-                    "Configuración inicial de infraestructura en la nube",
+                    "Desarrollo de funciones principales",
+                    "Diseño de interfaz de usuario adaptable",
+                    "Configuración de infraestructura en la nube",
                     "Soporte técnico básico",
                 ]
             },
             {
+                id: 2,
                 title: "Profesional",
                 subtitle: "Para empresas en crecimiento",
-                price: "",
+                price: "$240",
+                project: "/proyecto",
+                popular: "Más elegido",
+                url: "",
+                label: "Empezar ya",
                 features: [
                     "Desarrollo completo del sistema",
                     "Integraciones personalizadas con APIs externas",
-                    "Diseño y optimización de base de datos",
-                    "Gestión del proyecto dedicada",
+                    "Arquitectura de base de datos",
+                    "Gestor de proyectos dedicado"
                 ]
             },
             {
+                id: 3,
                 title: "Empresarial",
                 subtitle: "Para organizaciones con necesidades avanzadas",
                 price: "Personalizado",
+                url: "",
+                label: "Contactar con Ventas",
                 features: [
-                    "Infraestructura avanzada (multi-entorno / multinube)",
-                    "Mantenimiento continuo con acuerdos de servicio (SLA)",
-                    "Auditorías de seguridad y cumplimiento",
+                    "Infraestructura multinube",
+                    "Mantenimiento con respaldo de SLA",
+                    "Auditorías y cumplimiento de seguridad",
                     "Opciones de marca blanca",
                 ]
             },
