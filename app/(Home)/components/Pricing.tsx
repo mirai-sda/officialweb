@@ -22,7 +22,7 @@ const Pricing = () => {
           {pricings[lang].listPricing?.map((pricing) => (
             <div
               key={pricing.title}
-              className={`relative flex flex-col w-full mx-auto group gap-8 p-8 rounded-2xl bg-white/60 border hover:border-secondary hover:shadow-lg transition-all duration-300 ${pricing.id === 2 ? "border-secondary shadow-2xl shadow-secondary/20 scale-105" : "border-foreground/10"}`}
+              className={`relative flex flex-col w-full mx-auto group gap-8 p-8 rounded-2xl bg-white/60 border hover:border-secondary hover:shadow-lg transition-all duration-300 ${pricing.id === 2 ? "border-secondary shadow-2xl shadow-secondary/10 scale-105" : "border-foreground/10"}`}
             >
               {pricing.id === 2 && (
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 uppercase font-bold text-sm bg-secondary text-white px-4 py-0.5 rounded-full">
