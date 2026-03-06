@@ -8,7 +8,7 @@ const Pricing = () => {
   const { lang } = useLangStore();
 
   return (
-    <div className="flex flex-col gap-4 py-10 lg:py-16  bg-slate-50 ">
+    <div className="flex flex-col gap-4 py-10 lg:py-16 px-4 bg-slate-50 ">
       <div className="flex flex-col gap-8 max-w-7xl mx-auto px-4">
         <div className="flex flex-col gap-8 justify-center items-center max-w-2xl text-center mx-auto">
           <p className=" text-4xl font-bold text-foreground">
@@ -18,7 +18,7 @@ const Pricing = () => {
             {pricings[lang].description}
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 py-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 py-4">
           {pricings[lang].listPricing?.map((pricing) => (
             <div
               key={pricing.title}

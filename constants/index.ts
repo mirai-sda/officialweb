@@ -276,7 +276,7 @@ export const footer: FooterData = {
 
 export const hero = {
     en: {
-        title: "Your Vision, Built with",
+        title: "Your Vision, Built with ",
         title2: "Precision.",
         subtitle: "Elite Software Engineering",
         description: "Custom software for small and medium-sized businesses. We create secure and scalable digital solutions that simplify processes and help your business grow.",
@@ -292,7 +292,7 @@ export const hero = {
         checkDescription: "99% availability"
     },
     es: {
-        title: "Tu Visión, Construida con",
+        title: "Tu Visión, Construida con ",
         title2: "Precisión.",
         subtitle: "Ingeniería de Software de Élite",
         description: "Software a medida para pequeñas y medianas empresas. Creamos soluciones digitales seguras y escalables que simplifican procesos y ayudan a tu negocio a crecer.",

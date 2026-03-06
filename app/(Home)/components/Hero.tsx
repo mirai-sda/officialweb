@@ -16,10 +16,10 @@ const Hero = () => {
               {hero[lang].subtitle}
             </p>
             <h1 className="text-4xl lg:text-6xl font-bold text-foreground">
-              {hero[lang].title}{" "}
+              {hero[lang].title}
               <span className="text-secondary">{hero[lang].title2}</span>
             </h1>
-            <p className="text-base lg:text-lg text-gray-600">
+            <p className="text-base lg:text-lg text-foreground/60 font-light">
               {hero[lang].description}
             </p>
           </div>
@@ -45,14 +45,14 @@ const Hero = () => {
                 alt="Hero Person 2"
                 width={100}
                 height={100}
-                className="w-8 h-8 rounded-full absolute top-0 left-5 -z-10 border-2 border-white"
+                className="w-8 h-8 rounded-full absolute top-0 left-5 z-0 border-2 border-white"
               />
               <Image
                 src={heroimages.person3}
                 alt="Hero Person 3"
                 width={100}
                 height={100}
-                className="w-8 h-8 rounded-full absolute top-0 left-10 -z-20 border-2 border-white"
+                className="w-8 h-8 rounded-full absolute top-0 left-10 z-0 border-2 border-white"
               />
             </div>
             <p className="text-foreground/60 text-sm font-light">
